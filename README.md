@@ -6,14 +6,19 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+ 6.0.2
 
 * System dependencies
+linux
 
 * Configuration
 
 * Database creation
+sqlite 
+pg
 
 * Database initialization
+active mailers
 
 * How to run the test suite
 
@@ -21,4 +26,6 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Heroku Server
+
+
