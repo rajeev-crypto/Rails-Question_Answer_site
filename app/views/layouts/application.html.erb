@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hu</title>
+
+<head>
+    <title>HU</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> >
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+</head>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<body>
 
-  <body>
-    <%= yield %>
-  </body>
+    <%= render 'home/navbar' %>
+        <div class="well">
+            <%= current_user_email %>
+        </div>
+
+        <%= yield %>
+
+            <%= render 'home/new_question_form' %>
+
+</body>
+
 </html>
